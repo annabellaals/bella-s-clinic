@@ -300,42 +300,67 @@ h3 {
 
     /* STAFF SECTION */
 
-  .staff-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    .staff-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-    margin: 0 auto;
+        margin: 0 auto;
 
-    gap: 1rem;
-    width: 90%;
-    height: 100%;
-    padding: 5rem 0px;
-  }
+        gap: 1rem;
+        width: 90%;
+        height: 100%;
+        padding: 5rem 0px;
+    }
 
-  .staff-card {
-    height: 400px;
-    width: 380px;
+    .staff-card {
+        height: 400px;
+        width: 380px;
 
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
-    border-radius: 4px;
-  }
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+            0 4px 6px -4px rgb(0 0 0 / 0.1);
+        border-radius: 4px;
+    }
 
-  .staff-card img {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    width: 100%;
+    .staff-card img {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
 
-    background-color: #fff;
-  }
+        background-color: #fff;
+    }
 
-  .staff-card h3 {
-    font-size: 2rem;
-    text-align: center;
-  }
+    .staff-card h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+
+        padding: 0px 2rem;
+        padding-bottom: 2rem;
+        background-color: #dddddd;
+        height: 300px;
+    }
+
+    .clinic-details {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-media-links {
+        font-size: 1.5rem;
+
+        display: flex;
+        gap: 10px;
+    }
 
 }
 
