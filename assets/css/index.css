@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a,
+p,
+button {
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Dancing Script", sans-serif;
+}
+
+@media (min-width: 320px) {
+
+    /* HERO SECTION */
+    .hero-section {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("../images/hero-image.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+    }
+
+    .hero-container h2 {
+        font-size: 1.8rem;
+
+        text-align: center;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .hero-container button {
+        height: 50px;
+        width: 150px;
+
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        cursor: pointer;
+
+        background: linear-gradient(to right, transparent 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        color: black;
+        border: 2px solid white;
+        border-radius: 2px;
+        transition: all 0.5s ease-out;
+    }
+
+    .hero-container button:hover {
+        background-position: left bottom;
+        background-color: transparent;
+        color: white;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    /* HERO */
+
+    .hero-container {
+        align-items: baseline;
+        position: relative;
+
+        top: 15rem;
+        left: 10rem;
+    }
+
+    .hero-container h2 {
+        font-family: "Inter", sans-serif;
+        font-size: 3.5rem;
+        font-weight: 600;
+        width: 30%;
+
+        text-align: left;
+    }
+
+    .hero-container button {
+        font-size: 1.2rem;
+
+        height: 60px;
+        width: 250px;
+    }
+}
