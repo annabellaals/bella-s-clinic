@@ -223,6 +223,70 @@ h3 {
         color: white;
     }
 
+    /* TREATMENT SECTION */
+
+    .treatments-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 100%;
+        background-color: rgba(168, 160, 93, 0.1);
+    
+        padding: 2rem 0px;
+      }
+    
+      .treatments-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    
+        width: 80%;
+      }
+    
+      .treatments-container img {
+        box-shadow: 0 10px 10px -3px rgb(0 0 0 / 0.1);
+        border-radius: 10px;
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+    
+        filter: brightness(0.7);
+      }
+    
+      .image-container {
+        position: relative;
+      }
+    
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    
+      .image-container:hover img {
+        opacity: 0.7;
+      }
+    
+      .image-container:hover .middle {
+        opacity: 1;
+      }
+    
+      .text {
+        background-color: burlywood;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+
 }
 
 @media (min-width: 1024px) {
@@ -268,4 +332,17 @@ h3 {
         height: 60px;
         width: 250px;
     }
+
+    /* TREATMENT SECTION */
+
+  .treatments-section h2 {
+    font-size: 3rem;
+  }
+
+  .treatments-container {
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
