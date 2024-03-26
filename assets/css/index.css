@@ -227,10 +227,10 @@ body {
     /* TREATMENT SECTION */
   
     .treatments-section {
-      display: flex;
-      flex-direction: column;
+      display: flex ;
+      flex-direction: column !important;
       align-items: center;
-  
+
       width: 100%;
       background-color: rgba(168, 160, 93, 0.1);
   
@@ -315,7 +315,7 @@ body {
       padding: 5rem 0px;
     }
   
-    .staff-container {
+    .staff-card-container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -396,11 +396,9 @@ body {
     .hero-container {
       align-items: baseline;
       position: absolute;
-  
-      top: 10rem;
+      top: 15rem;
       left: 10rem;
-    }
-  
+  }
     .hero-container h2 {
   
       font-size: 2.5rem;
@@ -420,7 +418,7 @@ body {
     /* TREATMENT SECTION */
   
     .treatments-section h2 {
-      font-size: 3rem;
+      font-size: 2rem !important;
     }
   
     .treatments-container {
