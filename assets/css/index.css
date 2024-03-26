@@ -2,79 +2,79 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-}
-
-a,
-p,
-button {
+  }
+  
+  a,
+  p,
+  button {
     font-family: "Inter", sans-serif;
-}
-
-h1,
-h2,
-h3 {
+  }
+  
+  h1,
+  h2,
+  h3 {
     font-family: "Dancing Script", sans-serif;
-}
-
-.header {
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+  
     position: absolute;
     margin-top: 2rem;
     width: 100%;
     z-index: 100;
-}
-
-.logo {
-    font-size: 3rem;
+  }
+  
+  .logo {
+    font-size: 2rem;
     color: white;
-
+  
     margin-left: 2rem;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-
+  
     list-style: none;
-}
-
-.navlink a {
+  }
+  
+  .navlink a {
     font-size: 1.1rem;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.navlink a::after {
+  }
+  
+  .navlink a::after {
     content: "";
     width: 0%;
     height: 2px;
     background: #fff;
     display: block;
     transition: 0.3s;
-}
-
-.navlink a:hover::after {
+  }
+  
+  .navlink a:hover::after {
     width: 50%;
-}
-
-.contact-button {
+  }
+  
+  .contact-button {
     width: 130px;
     height: 50px;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
-
+  
     display: flex;
     align-items: center;
     justify-content: center;
-
+  
     background: linear-gradient(to right, white 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -82,343 +82,358 @@ h3 {
     border: 2px solid white;
     border-radius: 2px;
     transition: all 0.5s ease-out;
-
+  
     margin-right: 2rem;
     cursor: pointer;
-}
-
-.contact-button:hover {
+  }
+  
+  .contact-button:hover {
     background-position: left bottom;
     background-color: transparent;
     color: black;
-}
-
-@media (min-width: 320px) {
+  }
+  
+  @media (min-width: 320px) {
     /* HEADER */
-
+  
     .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        position: absolute;
-        margin-top: 2rem;
-        width: 100%;
-        z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      position: absolute;
+      margin-top: 2rem;
+      width: 100%;
+      z-index: 100;
     }
-
+  
     .nav-links {
-        position: fixed;
-        background: #e0dcc7;
-        height: 100vh;
-        width: 300px;
-        top: 0;
-        right: -300px;
-        text-align: right;
-        z-index: 2;
-        transition: 1s;
-
-        box-shadow: 0 10px 10px -3px rgb(0 0 0 / 0.5);
-
+      position: fixed;
+      background: #e0dcc7;
+      height: 100vh;
+      width: 300px;
+      top: 0;
+      right: -300px;
+      text-align: right;
+      z-index: 2;
+      transition: 1s;
+  
+      box-shadow: 0 10px 10px -3px rgb(0 0 0 / 0.5);
     }
-
+  
     .nav-links ul {
-        display: flex;
-        position: relative;
-        top: 10rem;
-        flex-direction: column;
-        align-items: baseline;
-
-        gap: 2rem;
+      display: flex;
+      position: relative;
+      top: 10rem;
+      flex-direction: column;
+      align-items: baseline;
+  
+      gap: 2rem;
     }
-
+  
     .nav-links li {
-        list-style: none;
+      list-style: none;
     }
-
+  
     .nav-links li a {
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: #000;
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: #000;
     }
-
+  
     #hide-menu {
-        display: flex;
-        position: relative;
-
-        font-size: 2rem;
-        cursor: pointer;
-
-        left: 30px;
-        top: 50px;
+      display: flex;
+      position: relative;
+  
+      font-size: 2rem;
+      cursor: pointer;
+  
+      left: 30px;
+      top: 50px;
     }
-
+  
     #large-nav {
-        display: none;
+      display: none;
     }
-
+  
     .navbar {
-        display: none;
+      display: none;
     }
-
+  
     .contact-button {
-        display: none;
+      display: none;
     }
-
+  
     .menu {
-        color: white;
-        font-size: 2.5rem;
-
-        cursor: pointer;
-        margin-right: 3rem;
+      color: white;
+      font-size: 2.5rem;
+  
+      cursor: pointer;
+      margin-right: 3rem;
     }
-
+  
     /* HERO SECTION */
     .hero-section {
-        min-height: 100vh;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("../images/hero-image.jpg");
-        background-position: center;
-        background-size: cover;
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../images/hero-image.jpg");
+      background-position: center;
+      background-size: cover;
     }
-
+  
     .hero-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  
+      height: 100vh;
     }
-
+  
     .hero-container h2 {
-        font-size: 1.8rem;
-
-        text-align: center;
-        color: white;
-        letter-spacing: 1px;
+      font-size: 1.8rem;
+      font-family: "Inter", sans-serif;
+  
+      text-align: center;
+      color: white;
+      letter-spacing: 1px;
     }
-
+  
     .hero-container button {
-        height: 50px;
-        width: 150px;
-
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        cursor: pointer;
-
-        background: linear-gradient(to right, transparent 50%, white 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        color: black;
-        border: 2px solid white;
-        border-radius: 2px;
-        transition: all 0.5s ease-out;
+      height: 50px;
+      width: 150px;
+  
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      cursor: pointer;
+  
+      background: linear-gradient(to right, transparent 50%, white 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      color: black;
+      border: 2px solid white;
+      border-radius: 2px;
+      transition: all 0.5s ease-out;
     }
-
+  
     .hero-container button:hover {
-        background-position: left bottom;
-        background-color: transparent;
-        color: white;
+      background-position: left bottom;
+      background-color: transparent;
+      color: white;
     }
-
+  
     /* TREATMENT SECTION */
-
+  
     .treatments-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        width: 100%;
-        background-color: rgba(168, 160, 93, 0.1);
-
-        padding: 2rem 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      width: 100%;
+      background-color: rgba(168, 160, 93, 0.1);
+  
+      padding: 2rem 0px;
     }
-
+  
     .treatments-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      width: 80%;
     }
-
+  
     .treatments-container img {
-        box-shadow: 0 10px 10px -3px rgb(0 0 0 / 0.1);
-        border-radius: 10px;
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: 0.5s ease;
-        backface-visibility: hidden;
-
-        filter: brightness(0.7);
+      box-shadow: 0 10px 10px -3px rgb(0 0 0 / 0.1);
+      border-radius: 10px;
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+  
+      filter: brightness(0.7);
     }
-
+  
     .image-container {
-        position: relative;
+      position: relative;
     }
-
+  
     .middle {
-        transition: 0.5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
     }
-
+  
     .image-container:hover img {
-        opacity: 0.7;
+      opacity: 0.7;
     }
-
+  
     .image-container:hover .middle {
-        opacity: 1;
+      opacity: 1;
     }
-
+  
     .text {
-        background-color: burlywood;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
+      background-color: burlywood;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
     }
-
+  
     /* VIDEO SECTION */
-
+  
     .video-section {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .video-section video {
-        height: 100%;
-        width: 100%;
+      height: 100%;
+      width: 100%;
     }
-
+  
     /* STAFF SECTION */
-
+  
     .staff-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-
-        margin: 0 auto;
-
-        gap: 1rem;
-        width: 90%;
-        height: 100%;
-        padding: 5rem 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      margin: 0 auto;
+  
+      gap: 1rem;
+      width: 90%;
+      height: 100%;
+      padding: 5rem 0px;
     }
-
+  
+    .staff-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  
     .staff-card {
-        height: 400px;
-        width: 380px;
-
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-            0 4px 6px -4px rgb(0 0 0 / 0.1);
-        border-radius: 4px;
+      height: 380px;
+      width: 300px;
+  
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+      border-radius: 4px;
     }
-
+  
     .staff-card img {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        width: 100%;
-
-        background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      width: 100%;
+  
+      background-color: #fff;
     }
-
+  
     .staff-card h3 {
-        font-size: 2rem;
-        text-align: center;
+      font-size: 2rem;
+      text-align: center;
     }
-
+  
     .footer-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-
-        padding: 0px 2rem;
-        padding-bottom: 2rem;
-        background-color: #dddddd;
-        height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+  
+      padding: 0px 2rem;
+      padding-bottom: 2rem;
+      background-color: #dddddd;
+      height: 300px;
     }
-
+  
     .clinic-details {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
-
+  
     .social-media-links {
-        font-size: 1.5rem;
-
-        display: flex;
-        gap: 10px;
+      font-size: 1.5rem;
+  
+      display: flex;
+      gap: 10px;
     }
-
-}
-
-@media (min-width: 1024px) {
+  }
+  
+  @media (min-width: 1024px) {
     /* HEADER */
-
+  
     .menu {
-        display: none !important;
+      display: none !important;
     }
-
+  
     #large-nav {
-        display: flex !important;
+      display: flex !important;
     }
-
+  
     .navbar {
-        display: flex !important;
+      display: flex !important;
     }
-
+  
     .contact-button {
-        display: flex !important;
+      display: flex !important;
     }
-
+  
     /* HERO */
-
+  
     .hero-container {
-        align-items: baseline;
-        position: relative;
-
-        top: 15rem;
-        left: 10rem;
+      align-items: baseline;
+      position: absolute;
+  
+      top: 10rem;
+      left: 10rem;
     }
-
+  
     .hero-container h2 {
-        font-family: "Inter", sans-serif;
-        font-size: 3.5rem;
-        font-weight: 600;
-        width: 30%;
-
-        text-align: left;
+  
+      font-size: 2.5rem;
+      font-weight: 600;
+      width: 75%;
+  
+      text-align: left;
     }
-
+  
     .hero-container button {
-        font-size: 1.2rem;
-
-        height: 60px;
-        width: 250px;
+      font-size: .9rem;
+  
+      height: 50px;
+      width: 200px;
     }
-
+  
     /* TREATMENT SECTION */
-
+  
     .treatments-section h2 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
+  
     .treatments-container {
-        width: 80%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+      width: 80%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
-}
+  
+    /* STAFF SECTION */
+  
+    .staff-section {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/book.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
     <title>Bella's Clinic</title>
-</head>
-<body>
-    <header class="header">
-        <h1 class="logo">Bella's Clinic</h1>
-        <div class="nav-links" id="navLinks">
-            <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="book.html">BOOK</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-        </div>
-        <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
-        <nav id="large-nav">
-            <ul class="navbar">
-                <li class="navlink">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="navlink">
-                    <a href="index.html">Book</a>
-                </li>
-            </ul>
-        </nav>
-        <button class="contact-button">Contact Us</button>
+  </head>
+  <body>
+    <header class="contact-header">
+      <h1 class="contact-logo">Bella's Clinic</h1>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="book.html">BOOK</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars contact-menu" onclick="showMenu()"></i>
+      <nav id="large-nav">
+        <ul class="navbar">
+          <li class="contact-navlink">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="contact-navlink">
+            <a href="index.html">Book</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="contact-contact-button contact-button">Contact Us</button>
     </header>
-<main>
-    <section class="contact-section">
+    <main>
+      <section class="contact-section">
         <form
           class="form"
           action="mailto:bebe_chanel_6@hotmail.com"
@@ -66,21 +66,35 @@
           <input type="button" value="Submit Message" class="form-button" />
         </form>
       </section>
-</main>
-</footer>
+    </main>
+    <footer class="footer-section" style="position: relative; bottom: 0;">
+      <div class="clinic-details">
+        <h1>Bella's Clinic</h1>
+        <div>|</div>
+        <p>Random Street 124, Östergötland</p>
+      </div>
+      <div class="social-media-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
 
-<script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
-<script>
-    var navLinks = document.getElementById("navLinks");
+    <script
+      src="https://kit.fontawesome.com/958d0d4858.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
 
-    function showMenu() {
+      function showMenu() {
         navLinks.style.right = "0px";
-    }
+      }
 
-    function hideMenu() {
+      function hideMenu() {
         navLinks.style.right = "-300px";
-    }
-</script>
-    
-</body>
+      }
+    </script>
+  </body>
 </html>
