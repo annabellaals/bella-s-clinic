@@ -43,7 +43,7 @@ body {
     list-style: none;
   }
   
-  .book-navlink a {
+  .links {
     font-size: .9rem;
     color: black;
     text-decoration: none;
@@ -51,7 +51,7 @@ body {
     letter-spacing: 1px;
   }
   
-  .book-navlink a::after {
+  .links::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -60,7 +60,7 @@ body {
     transition: 0.3s;
   }
   
-  .book-navlink a:hover::after {
+  .links:hover::after {
     width: 50%;
   }
   
@@ -177,6 +177,14 @@ body {
     .treatment-1-description p {
       letter-spacing: 1px;
       line-height: 1.4rem;
+    }
+
+    .lg-screen {
+      display: none !important;
+    }
+
+    .sm-screen {
+      display: block !important;
     }
   }
   
