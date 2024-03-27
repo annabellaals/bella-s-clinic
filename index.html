@@ -1,123 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Bella's Clinic</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="logo">Bella's Clinic</h1>
-      <div class="nav-links" id="navLinks">
-        <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="book.html">BOOK</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <title>Bella's Clinic</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">Bella's Clinic</h1>
+    <div class="nav-links" id="navLinks">
+      <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="book.html">BOOK</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
+    <nav id="large-nav">
+      <ul class="navbar">
+        <li class="navlink">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navlink">
+          <a href="book.html">Book</a>
+        </li>
+        <li><a href="contact.html" class="contact-button-link"><button class="contact-button">CONTACT US</button></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="hero-container">
+        <h2>Figma ipsum component variant main layer</h2>
+        <button>Find out more</button>
       </div>
-      <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
-      <nav id="large-nav">
-        <ul class="navbar">
-          <li class="navlink">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navlink">
-            <a href="book.html">Book</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="contact.html"><button class="contact-button">CONTACT US</button></a>
-    </header>
-    <main>
-      <section class="hero-section">
-        <div class="hero-container">
-          <h2>Figma ipsum component variant main layer</h2>
-          <button>Find out more</button>
-        </div>
-      </section>
-      <section class="treatments-section">
-        <h2>Treatments</h2>
-        <div class="treatments-container">
-          <div class="image-container">
-            <img src="./assets/images/treatment-1.jpg" />
-            <div class="middle">
-              <a class="text">Treatment 1</a>
-            </div>
-          </div>
-          <div class="image-container">
-            <img src="./assets/images/treatment-2.jpg" />
-            <div class="middle">
-              <a class="text">Treatment 2</a>
-            </div>
-          </div>
-          <div class="image-container">
-            <img src="./assets/images/treatment-3.jpg" />
-            <div class="middle">
-              <a class="text">Treatment 3</a>
-            </div>
+    </section>
+    <section class="treatments-section">
+      <h2>Treatments</h2>
+      <div class="treatments-container">
+        <div class="image-container">
+          <img src="./assets/images/treatment-1.jpg" />
+          <div class="middle">
+            <a class="text">Dermapen</a>
           </div>
         </div>
-      </section>
-      <section class="video-section">
-        <video controls>
-          <source src="movie.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </section>
-      <section class="staff-section">
-        <h2>Our Staff</h2>
-        <div class="staff-card-container">
-          <div class="staff-card">
-            <img src="./assets/images/staff-1.png" />
-            <h3>Julie</h3>
-          </div>
-          <div class="staff-card">
-            <img src="./assets/images/staff-2.png" />
-            <h3>Mark</h3>
-          </div>
-          <div class="staff-card">
-            <img src="./assets/images/staff-3.png" />
-            <h3>Meaghan</h3>
+        <div class="image-container">
+          <img src="./assets/images/treatment-2.jpg" />
+          <div class="middle">
+            <a class="text">PRP</a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer-section">
-      <div class="clinic-details">
-        <h1>Bella's Clinic</h1>
-        <div>|</div>
-        <p>Random Street 124, Östergötland</p>
+        <div class="image-container">
+          <img src="./assets/images/treatment-3.jpg" />
+          <div class="middle">
+            <a class="text">Hydra Facial</a>
+          </div>
+        </div>
       </div>
-      <div class="social-media-links">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
+    </section>
+    <section class="video-section">
+      <video controls>
+        <source src="./assets/videos/annabella.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section class="staff-section">
+      <h2>Our Staff</h2>
+      <div class="staff-card-container">
+        <div class="staff-card">
+          <img src="./assets/images/staff-1.png" />
+          <h3>Julie</h3>
+        </div>
+        <div class="staff-card">
+          <img src="./assets/images/staff-2.png" />
+          <h3>Mark</h3>
+        </div>
+        <div class="staff-card">
+          <img src="./assets/images/staff-3.png" />
+          <h3>Meaghan</h3>
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
+  <footer class="footer-section">
+    <div class="clinic-details">
+      <h1>Bella's Clinic</h1>
+      <div>|</div>
+      <p>Random Street 124, Östergötland</p>
+    </div>
+    <div class="social-media-links">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/958d0d4858.js"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
 
-    <script>
-      var navLinks = document.getElementById("navLinks");
+  <script>
+    var navLinks = document.getElementById("navLinks");
 
-      function showMenu() {
-        navLinks.style.right = "0px";
-      }
+    function showMenu() {
+      navLinks.style.right = "0px";
+    }
 
-      function hideMenu() {
-        navLinks.style.right = "-300px";
-      }
-    </script>
-  </body>
+    function hideMenu() {
+      navLinks.style.right = "-300px";
+    }
+  </script>
+</body>
+
 </html>

@@ -173,6 +173,11 @@ body {
       flex-direction: column;
       gap: 10px;
     }
+
+    .treatment-1-description p {
+      letter-spacing: 1px;
+      line-height: 1.4rem;
+    }
   }
   
   @media (min-width: 768px) {
