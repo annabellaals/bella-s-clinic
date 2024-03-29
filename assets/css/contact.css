@@ -49,6 +49,7 @@
   .form {
     display: flex;
     flex-direction: column;
+    width: 95%;
     gap: 1rem;
   }
 
@@ -61,7 +62,7 @@
     flex-direction: column;
 
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
   }
 
   .form-field input {
