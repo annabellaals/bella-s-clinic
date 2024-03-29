@@ -26,7 +26,6 @@
 }
 
 @media (min-width: 280px) {
-
   .contact-menu {
     color: black;
     font-size: 2rem;
@@ -43,8 +42,6 @@
     padding: 1rem;
     margin: 0 auto;
   }
-
-
 
   .form {
     display: flex;
@@ -99,9 +96,43 @@
     cursor: pointer;
     margin: 0 auto;
   }
+  .opening-hours {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  .table-header {
+    font-weight: 600;
+  }
+
+  th,
+  td {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    text-align: left;
+  }
 }
 
 @media (min-width: 768px) {
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1rem;
+
+    padding: 2rem 0;
+  }
+
   .form-button {
     background: linear-gradient(to right, white 50%, black 50%);
     background-size: 200% 100%;
@@ -120,5 +151,16 @@
 
   .contact-menu {
     display: none !important;
+  }
+
+  .opening-hours {
+    padding: 2rem;
+  }
+
+  table {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-collapse: collapse;
   }
 }
