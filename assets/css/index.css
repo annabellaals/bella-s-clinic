@@ -108,7 +108,23 @@ h3 {
   text-decoration: underline;
 }
 
-@media (min-width: 320px) {
+.youtube-link {
+  color: red;
+}
+
+.instagram-link {
+  color: black;
+}
+
+.x-twitter-link {
+  color: black;
+}
+
+.facebook-link {
+  color: blue;
+}
+
+@media (min-width: 280px) {
   /* HEADER */
 
   .header {
@@ -126,7 +142,7 @@ h3 {
     position: fixed;
     background: #e0dcc7;
     height: 100vh;
-    width: 300px;
+    width: 250px;
     top: 0;
     right: -300px;
     text-align: right;
@@ -388,7 +404,7 @@ h3 {
     font-size: 1.5rem;
 
     display: flex;
-    gap: 10px;
+    gap: 1.5rem;
   }
 }
 

@@ -25,7 +25,7 @@
   list-style: none;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 280px) {
 
   .contact-menu {
     color: black;
