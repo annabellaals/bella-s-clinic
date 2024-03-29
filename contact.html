@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/book.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="./assets/css/contact.css" />
-  <link rel="stylesheet" href="./assets/css/book.css" />
-  <title>Bella's Clinic</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bella's Clinic</title>
+  </head>
 
-<body>
-  <header class="contact-header">
-    <h1 class="logo"><a href="index.html">Bella's Clinic</a></h1>
+  <body>
+    <header class="contact-header">
+      <a href="index.html" class="logo-link">
+        <h1 id="book-logo" class="book-logo">Bella's Clinic</h1></a
+      >
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="book.html">BOOK</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars contact-menu" onclick="showMenu()"></i>
+      <nav id="large-nav">
+        <ul class="navbar">
+          <li class="contact-navlink">
+            <a href="index.html" class="links">Home</a>
+          </li>
+          <li class="contact-navlink">
+            <a href="index.html" class="links">Book</a>
+          </li>
+          <li class="contact-navlink">
+            <a href="contact.html" class="contact-button-link">
+              <button class="book-contact-button book-button">
+                Contact Us
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-section">
+        <form
+          class="form"
+          action="mailto:bebe_chanel_6@hotmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <h2>Contact Us</h2>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="form-field">
+            <label for="reason">Reason for contacting</label>
+            <input
+              type="text"
+              id="reason"
+              name="reason"
+              placeholder="Your Reason"
+            />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <input type="button" value="Submit Message" class="form-button" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer-section" style="position: relative; bottom: 0">
+      <div class="clinic-details">
+        <h1>Bella's Clinic</h1>
+        <div>|</div>
+        <p>Källtorpsvägen 10, 176 74, Stockholm, Sweden</p>
 
-    <div class="nav-links" id="navLinks">
-      <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="book.html">BOOK</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-      </ul>
-    </div>
-    <i class="fa-solid fa-bars contact-menu" onclick="showMenu()"></i>
-    <nav id="large-nav">
-      <ul class="navbar">
-        <li class="contact-navlink">
-          <a href="index.html" class="links">Home</a>
-        </li>
-        <li class="contact-navlink">
-          <a href="index.html" class="links">Book</a>
-        </li>
-        <li class="contact-navlink">
-          <a href="index.html" class="contact-button-link">
-            <button class="book-contact-button book-button">Contact Us</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="contact-section">
-      <form class="form" action="mailto:bebe_chanel_6@hotmail.com" method="post" enctype="text/plain">
-        <h2>Contact Us</h2>
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" />
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" />
-        </div>
-        <div class="form-field">
-          <label for="reason">Reason for contacting</label>
-          <input type="text" id="reason" name="reason" placeholder="Your Reason" />
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea>
-        </div>
-        <input type="button" value="Submit Message" class="form-button" />
-      </form>
-    </section>
-  </main>
-  <footer class="footer-section" style="position: relative; bottom: 0;">
-    <div class="clinic-details">
-      <h1>Bella's Clinic</h1>
-      <div>|</div>
-      <p>Random Street 124, Östergötland</p>
-    </div>
-    <div class="social-media-links">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </div>
-  </footer>
+      </div>
+      <div class="social-media-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
 
-  <script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
-  <script>
-    var navLinks = document.getElementById("navLinks");
+    <script
+      src="https://kit.fontawesome.com/958d0d4858.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
 
-    function showMenu() {
-      navLinks.style.right = "0px";
-    }
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
 
-    function hideMenu() {
-      navLinks.style.right = "-300px";
-    }
-  </script>
-</body>
-
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+      }
+    </script>
+  </body>
 </html>
