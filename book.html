@@ -1,113 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/book.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Bella's Clinic</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/book.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <title>Bella's Clinic</title>
-</head>
-
-<body>
-  <header class="book-header">
-    <h1 class="book-logo">Bella's Clinic</h1>
-    <div class="nav-links" id="navLinks">
-      <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="book.html">BOOK</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-      </ul>
-    </div>
-    <i class="fa-solid fa-bars book-menu" onclick="showMenu()"></i>
-    <nav id="large-nav">
-      <ul class="navbar">
-        <li class="book-navlink">
-          <a href="index.html" class="links">Home</a>
-        </li>
-        <li class="book-navlink">
-          <a href="index.html" class="links">Book</a>
-        </li>
-        <li class="book-navlink">
-          <a href="index.html" class="contact-button-link"><button class="book-contact-button book-button">Contact Us</button></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main style="padding: 2rem 0px;">
-    <section class="treatment-1-section" id="prp">
-      <img src="./assets/images/treatment-3.jpg" />
-      <div class="treatment-1-description">
-        <h2>PRP</h2>
-        <p>
-          PRP treatment uses your own blood to help your skin heal. Doctors separate the platelets from your blood and
-          use them during microneedling, a process that stimulates collagen production. This makes your skin smoother
-          and reduces things like acne scars and stretch marks. Since it's your own blood, there's very little risk of
-          your body rejecting it or having an allergic reaction.
-        </p>
-        <button class="book-button">Book</button>
+  <body>
+    <header class="book-header">
+      <h1 class="book-logo">Bella's Clinic</h1>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="book.html">BOOK</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
       </div>
-    </section>
-    <hr>
-    <section class="treatment-1-section" id="dermapen">
-      <div class="treatment-1-description">
-        <h2>Dermapen</h2>
-        <p>
-          Dermapen is another type of microneedling treatment that boosts collagen production in your skin. By
-          stimulating collagen, it can improve the appearance of things like large pores, cellulite, acne scars, and
-          wrinkles. Special serums are also applied during the treatment to further enhance skin rejuvenation, firmness,
-          and overall condition.
-
-          Dermapen can effectively treat various skin issues such as acne scars, impurities, fine lines, pigmentation,
-          and large pores.
-        </p>
-        <button class="book-button">Book</button>
+      <i class="fa-solid fa-bars book-menu" onclick="showMenu()"></i>
+      <nav id="large-nav">
+        <ul class="navbar">
+          <li class="book-navlink">
+            <a href="index.html" class="links">Home</a>
+          </li>
+          <li class="book-navlink">
+            <a href="index.html" class="links">Book</a>
+          </li>
+          <li class="book-navlink">
+            <a href="index.html" class="contact-button-link"
+              ><button class="book-contact-button book-button">
+                Contact Us
+              </button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="padding: 2rem 0px">
+      <section class="treatment-1-section" id="prp">
+        <img src="./assets/images/treatment-3.jpg" />
+        <div class="treatment-1-description">
+          <h2>PRP</h2>
+          <p>
+            PRP treatment uses your own blood to help your skin heal. Doctors
+            separate the platelets from your blood and use them during
+            microneedling, a process that stimulates collagen production. This
+            makes your skin smoother and reduces things like acne scars and
+            stretch marks. Since it's your own blood, there's very little risk
+            of your body rejecting it or having an allergic reaction.
+          </p>
+          <a href="https://calendar.app.google/eS24yGcaK6mFX8GL9">
+            <button class="book-button">Book</button>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <section class="treatment-1-section" id="dermapen">
+        <div class="treatment-1-description">
+          <h2>Dermapen</h2>
+          <p>
+            Dermapen is another type of microneedling treatment that boosts
+            collagen production in your skin. By stimulating collagen, it can
+            improve the appearance of things like large pores, cellulite, acne
+            scars, and wrinkles. Special serums are also applied during the
+            treatment to further enhance skin rejuvenation, firmness, and
+            overall condition. Dermapen can effectively treat various skin
+            issues such as acne scars, impurities, fine lines, pigmentation, and
+            large pores.
+          </p>
+          <a href="https://calendar.app.google/utqST4APjFUkyHtU8">
+            <button class="book-button">Book</button>
+          </a>
+        </div>
+        <img src="./assets/images/treatment-1.jpg" />
+      </section>
+      <hr />
+      <section class="treatment-1-section" id="hydra-facial">
+        <img src="./assets/images/treatment-2.jpg" />
+        <div class="treatment-1-description">
+          <h2>Hydra Facial</h2>
+          <p>
+            A Hydrafacial is a popular skin treatment that doesn't involve
+            surgery. It's known for its ability to make your skin smoother and
+            more hydrated. During the process, your skin gets cleaned,
+            exfoliated, and moisturized using special serums. It's called
+            "hydra" because it's really good at hydrating your skin. The
+            treatment is quick, taking about 30 minutes, and you can see the
+            results right away. Plus, you don't need any downtime to recover.
+          </p>
+          <a href="https://calendar.app.google/eS24yGcaK6mFX8GL9">
+            <button class="book-button">Book</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="clinic-details">
+        <h1>Bella's Clinic</h1>
+        <div>|</div>
+        <p>Random Street 124, Östergötland</p>
       </div>
-      <img src="./assets/images/treatment-1.jpg" />
-    </section>
-    <hr>
-    <section class="treatment-1-section" id="hydra-facial">
-      <img src="./assets/images/treatment-2.jpg" />
-      <div class="treatment-1-description">
-        <h2>Hydra Facial</h2>
-        <p>
-          A Hydrafacial is a popular skin treatment that doesn't involve surgery. It's known for its ability to make
-          your skin smoother and more hydrated. During the process, your skin gets cleaned, exfoliated, and moisturized
-          using special serums. It's called "hydra" because it's really good at hydrating your skin. The treatment is
-          quick, taking about 30 minutes, and you can see the results right away. Plus, you don't need any downtime to
-          recover.
-        </p>
-        <button class="book-button">Book</button>
+      <div class="social-media-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
       </div>
-    </section>
-  </main>
-  <footer class="footer-section">
-    <div class="clinic-details">
-      <h1>Bella's Clinic</h1>
-      <div>|</div>
-      <p>Random Street 124, Östergötland</p>
-    </div>
-    <div class="social-media-links">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
-  <script>
-    var navLinks = document.getElementById("navLinks");
+    <script
+      src="https://kit.fontawesome.com/958d0d4858.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
 
-    function showMenu() {
-      navLinks.style.right = "0px";
-    }
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
 
-    function hideMenu() {
-      navLinks.style.right = "-300px";
-    }
-  </script>
-</body>
-
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+      }
+    </script>
+  </body>
 </html>
