@@ -30,7 +30,8 @@ h3 {
 
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.8rem;
+
   color: white;
 
   margin-left: 2rem;
@@ -197,7 +198,7 @@ h3 {
 
   .menu {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 
     cursor: pointer;
     margin-right: 3rem;
