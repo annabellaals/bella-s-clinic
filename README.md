@@ -112,3 +112,11 @@ Github link: https://github.com/annabellaals/bella-s-clinic
     - https://www.pexels.com/
     - https://unsplash.com/
     - https://www.shutterstock.com/
+
+## WIREFRAMES
+
+### * Website *
+![Wireframe](assets/images/Wireframe1.jpeg)
+
+### * Mobile *
+![Wireframe-mobile](assets/images/Wireframe-mobile.jpeg)
