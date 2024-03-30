@@ -106,6 +106,9 @@ Github link: https://github.com/annabellaals/bella-s-clinic
 
 * Credits to W3schools.
 
+* Credits to Code Institute student, helped me on-hand
+
+
 
 ### Media
   - All images used were taken from
