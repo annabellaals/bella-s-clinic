@@ -15,7 +15,7 @@ __Navigation menu__
     identical in each page to allow for easy navigation
    - The navigation menu is responsive even on small screen devices
 
-#### Nav-bar :
+#### Nav-bar:
 ![Nav-bar](assets/images/nav.png)
 
 
