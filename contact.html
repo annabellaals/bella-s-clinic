@@ -1,180 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Bella's Clinic offers premium facial treatments to rejuvenate your skin. Specializing in Dermapen, PRP, and Hydra Facial treatments in Stockholm, Sweden."
-    />
-    <meta
-      name="keywords"
-      content="Bella's Clinic, facial treatments, Dermapen, PRP, Hydra Facial, beauty clinic, skin rejuvenation, Stockholm, Sweden"
-    />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link rel="stylesheet" href="./assets/css/contact.css" />
-    <link rel="stylesheet" href="./assets/css/book.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Bella's Clinic offers premium facial treatments to rejuvenate your skin. Specializing in Dermapen, PRP, and Hydra Facial treatments in Stockholm, Sweden." />
+  <meta name="keywords"
+    content="Bella's Clinic, facial treatments, Dermapen, PRP, Hydra Facial, beauty clinic, skin rejuvenation, Stockholm, Sweden" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+  <link rel="stylesheet" href="./assets/css/book.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Bella's Clinic</title>
-  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>Bella's Clinic</title>
+</head>
 
-  <body>
-    <header class="contact-header">
-      <a href="index.html" class="logo-link">
-        <h1 id="book-logo" class="book-logo">Bella's Clinic</h1></a
-      >
-      <div class="nav-links" id="navLinks">
-        <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="book.html">BOOK</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-      </div>
-      <i class="fa-solid fa-bars contact-menu" onclick="showMenu()"></i>
-      <nav id="large-nav">
-        <ul class="navbar">
-          <li class="contact-navlink">
-            <a href="index.html" class="links">Home</a>
-          </li>
-          <li class="contact-navlink">
-            <a href="book.html" class="links">Book</a>
-          </li>
-          <li class="contact-navlink">
-            <a
-              href="contact.html"
-              class="book-contact-button book-button contact-button-link"
-            >
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="contact-section">
-        <form
-          class="form"
-          action="mailto:bebe_chanel_6@hotmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <h2>Contact Us</h2>
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" />
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            />
-          </div>
-          <div class="form-field">
-            <label for="reason">Reason for contacting</label>
-            <input
-              type="text"
-              id="reason"
-              name="reason"
-              placeholder="Your Reason"
-            />
-          </div>
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              cols="50"
-              placeholder="Your message"
-            ></textarea>
-          </div>
-          <input type="button" value="Submit Message" class="form-button" />
-        </form>
-      </section>
-      <section class="opening-hours">
-        <h2>Opening Hours</h2>
-        <table>
-          <tr>
-            <th class="table-header">Day</th>
-            <th class="table-header">Opening hours</th>
-          </tr>
-          <tr>
-            <td>Monday</td>
-            <td>9:00 AM - 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Tuesday</td>
-            <td>9:00 AM - 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Wednesday</td>
-            <td>9:00 AM - 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Thursday</td>
-            <td>9:00 AM - 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td>9:00 AM - 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td>10:00 AM - 4:00 PM</td>
-          </tr>
-          <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-          </tr>
-        </table>
-      </section>
-    </main>
-    <footer class="footer-section" style="position: relative; bottom: 0">
-      <div class="clinic-details">
-        <h1>Bella's Clinic</h1>
-        <div>|</div>
-        <p>Källtorpsvägen 10, 176 74, Stockholm, Sweden</p>
-      </div>
-      <div class="social-media-links">
-        <a href="https://twitter.com/?lang=en" class="x-twitter-link">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/" class="facebook-link">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/" class="instagram-link">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/" class="youtube-link">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </div>
-    </footer>
+<body>
+  <header class="contact-header">
+    <a href="index.html" class="logo-link">
+      <h1 id="book-logo" class="book-logo">Bella's Clinic</h1>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa-solid fa-xmark" id="hide-menu" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="book.html">BOOK</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <i class="fa-solid fa-bars contact-menu" onclick="showMenu()"></i>
+    <nav id="large-nav">
+      <ul class="navbar">
+        <li class="contact-navlink">
+          <a href="index.html" class="links">Home</a>
+        </li>
+        <li class="contact-navlink">
+          <a href="book.html" class="links">Book</a>
+        </li>
+        <li class="contact-navlink">
+          <a href="contact.html" class="book-contact-button book-button contact-button-link">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-section">
+      <form class="form" action="mailto:bebe_chanel_6@hotmail.com" method="post" enctype="text/plain">
+        <h2>Contact Us</h2>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input required type="text" id="name" name="name" placeholder="Your name" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input required type="email" id="email" name="email" placeholder="Your email" />
+        </div>
+        <div class="form-field">
+          <label for="reason">Reason for contacting</label>
+          <input required type="text" id="reason" name="reason" placeholder="Your Reason" />
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea required id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea>
+        </div>
+        <input type="button" value="Submit Message" class="form-button" />
+      </form>
+    </section>
+    <section class="opening-hours">
+      <h2>Opening Hours</h2>
+      <table>
+        <tr>
+          <th class="table-header">Day</th>
+          <th class="table-header">Opening hours</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>10:00 AM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer class="footer-section" style="position: relative; bottom: 0">
+    <div class="clinic-details">
+      <h1>Bella's Clinic</h1>
+      <div>|</div>
+      <p>Källtorpsvägen 10, 176 74, Stockholm, Sweden</p>
+    </div>
+    <div class="social-media-links">
+      <a href="https://twitter.com/?lang=en" class="x-twitter-link">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/" class="facebook-link">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/" class="instagram-link">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/" class="youtube-link">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/958d0d4858.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      var navLinks = document.getElementById("navLinks");
+  <script src="https://kit.fontawesome.com/958d0d4858.js" crossorigin="anonymous"></script>
+  <script>
+    var navLinks = document.getElementById("navLinks");
 
-      function showMenu() {
-        navLinks.style.right = "0px";
-      }
+    function showMenu() {
+      navLinks.style.right = "0px";
+    }
 
-      function hideMenu() {
-        navLinks.style.right = "-300px";
-      }
-    </script>
-  </body>
+    function hideMenu() {
+      navLinks.style.right = "-300px";
+    }
+  </script>
+</body>
+
 </html>
