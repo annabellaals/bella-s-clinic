@@ -116,7 +116,7 @@ Github link: https://github.com/annabellaals/bella-s-clinic
 ## WIREFRAMES
 
 ### * Website *
-![Wireframe](assets/images/Wireframe1.jpeg)
+![Wireframe](assets/images/Wireframe1.jpg)
 
 ### * Mobile *
-![Wireframe-mobile](assets/images/Wireframe-mobile.jpeg)
+![Wireframe-mobile](assets/images/Wireframe-mobile.jpg)
