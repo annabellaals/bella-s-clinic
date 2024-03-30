@@ -33,7 +33,7 @@ This website was designed with responsive, simplistic and clear features that wi
    - 3 panel section is included in the home page, when hovered over gives an effect where if clicked it redirects the user to that specific treament section in the Booking page
    - Provides the user with short vital information about the treatments Bella's clinic offers
 
-![Home-treatments](assets/images/treatments-section.png)
+![Home-treatments](assets/images/Treatments-section.png)
 
 - __Video__
   -  A playable video of a patient getting their skin treated with one of our treatments
